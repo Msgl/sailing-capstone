@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- what is meta? Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+
+	<!--UTF-8 - Character encoding for Unicode-->
+	<meta charset="utf-8"> 
+	<!-- description of your web page-->
+	<meta name="description" content="Capstone webpage"> 
+	<!--Define keywords for search engines-->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+	<!--author-->
+	<meta name="author" content="MsG"> 
+	<!--Refresh document every 30 seconds-->
+	<meta http-equiv="refresh" content="30"> 
+	<!--Setting the viewport to make your website look good on all devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- tag for the title !mandatory!CANNOT BE OMITTED-->
+	<title> Capstone Project </title> 
+
+	<!-- add favicon -->
+	<link rel="shortcut icon" type="image/png"	href="favicon-capstone.png"> 
+
+	<!-- 	Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet' type='text/css'> 
+	<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<!-- add style -->
+	<link rel="stylesheet" type="text/css" href="capstone.css">
+
+	<!-- my js file -->
+	<script src="capstone.js"></script>  
+
+</head>
+<body>
+<header>
+	<!-- 	Navigation Bar on the top right corner. The id of the bar is "topLinks" and we can use this name to alter the style in css -->
+
+      <!-- 		<div class="logo">LOGO</div> -->
+      
+	  <nav id="navContainer">
+        <ul class="navbar" id="nava">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="destination.html">Destinations</a></li>
+			<li><a href="fleet.html">Our fleet</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <!--TOOGLE CLASS for burger https://www.w3schools.com/howto/howto_js_toggle_class.asp -->
+        <div class="burger" onclick="burger()" id = "burg" >
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        
+	</nav>
+</header>
+	<h1 id="gallery">Destinations</h1>
+	<div class="focus"></div>	
+	<div class="row">
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1572336995412-6b4eb500905d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Photo of the sea and traditional boat - Syros Island">
+			<img src="https://images.unsplash.com/photo-1518030246977-4accad8a030b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Photo of a church in Cyclades">
+		</div>
+
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1517926967795-31943e805dae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Photo of Santorini Island">
+			<img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Photo of Myconos Island">
+		</div>
+
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1551380125-e5051ca9d68b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Photo of Santorini">
+			<img src="https://images.unsplash.com/photo-1569581495523-466822f51990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Flowers in Cyclades">
+		</div>		
+
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1523568129082-a8d6c095638e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Windmill in Myconos">
+			<img src="https://images.unsplash.com/photo-1563796959867-24909f1a2fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Narrow street in Paros Island">
+		</div>
+
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1554236210-14c021cb329d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Cat in Santorini">
+			<img src="https://images.unsplash.com/photo-1583608628796-b788693ed381?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Street in Naxos">
+		</div>
+		
+		<div class="column">
+			<img src="https://images.unsplash.com/photo-1564471806257-847914c5f8f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Traditional boat in Syros">
+			<img src="https://images.unsplash.com/photo-1559076898-470651f49078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Photo in Santorini">
+		</div>
+	</div>
+	
+	<footer><p>Author: Msg. This is the capstone project for <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a> Coursera Specialization.</p></footer>
+
+</body>
+</html>

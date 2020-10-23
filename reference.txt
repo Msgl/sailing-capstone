@@ -1,0 +1,20 @@
+-> our boats/fleet 
+http://www.perfectsailing.gr/our-boats/
+https://mykonossailing.gr/category/fleet/
+
+JQuery:
+https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+
+Responsiveslides plugin:
+http://responsiveslides.com/
+
+Ocean sound:
+https://www.freesoundeffects.com/free-sounds/ocean-surf-10011/
+
+Photos:
+https://unsplash.com/
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- what is meta? Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+
+	<!--UTF-8 - Character encoding for Unicode-->
+	<meta charset="utf-8"> 
+	<!-- description of your web page-->
+	<meta name="description" content="Capstone webpage"> 
+	<!--Define keywords for search engines-->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+	<!--author-->
+	<meta name="author" content="MsG"> 
+	<!--Refresh document every 30 seconds-->
+	<meta http-equiv="refresh" content="30"> 
+	<!--Setting the viewport to make your website look good on all devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- tag for the title !mandatory!CANNOT BE OMITTED-->
+	<title> Capstone Project </title> 
+
+	<!-- add favicon -->
+	<link rel="shortcut icon" type="image/png"	href="favicon-capstone.png"> 
+
+	<!-- 	Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet' type='text/css'> 
+	<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<!-- add style -->
+	<link rel="stylesheet" type="text/css" href="capstone.css">
+
+	<!-- my js file -->
+	<script src="capstone.js"></script> 
+
+</head>
+<body>
+<header>
+	
+      <nav id="navContainer">
+        <ul class="navbar" id="nava">
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+			<li><a href="fleet.html">Our fleet</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <!--TOOGLE CLASS for burger. Resources: https://www.w3schools.com/howto/howto_js_toggle_class.asp -->
+        <div class="burger" onclick="burger()" id = "burg" >
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+	</nav>
+	
+</header>
+<h1>Welcome to our sailing company!</h1>
+
+<div class="indexDiv">
+	<!-- imageDiv div contains an image (left side of the page-->
+	<div id="imageDiv">
+		<img src="logo.png" alt="Logo of the company">
+	</div>
+
+	<!-- indexImage div contains customer quotes (right side) -->
+		<div id="quoteDiv">
+			<p id="quotePar">Myself and 4 friends took this tour on the recommendation of our host and we could not have been happier. The boat was beautiful, we had a great group of people and the staff was absolutely phenomenal!<br><br>- Regis Walt</p>
+		
+			<script>
+			//Resources used: https://teamtreehouse.com/community/how-can-i-make-my-quote-transition-to-other-quotes
+			//Set up the quotes
+			//Make the very first quote that is actually on the page be the last quote in the array so that it goes full circle
+			var quotes = [
+			"Myself and 4 friends took this tour on the recommendation of our host and we could not have been happier. The boat was beautiful, we had a great group of people and the staff was absolutely phenomenal!<br><br>- Regis Walt",
+			"Excellent experience - highly recommended! The small crew couldn’t be nicer, and the food they prepared was awesome. A must when on the island. <br><br>- Alicia Rossi",
+			"Excellent 4-day cruise with a great meal. Only around 7 people on board made it a nice day that wasn't overcrowded and we got great service attention from the staff.<br><br>- Margaret Peres"
+			];
+			//Set up a counter variable
+			var counter = 0;
+			
+			//Set a timer function, 9000 = 9000 milliseconds = 9 seconds
+			setInterval(function () {
+			//If the counter falls within the allowed indices of the array...
+			if (counter < quotes.length) {
+			//Set the quote text to the next quote
+			document.getElementById("quotePar").innerHTML = quotes[counter];
+			//Increase the counter
+			counter++;
+			}
+			else{
+			//Otherwise, reset the counter variable
+			counter = 0;
+			}
+			}, 3500);
+			</script>
+		</div>
+</div>
+	<!-- audioDiv contains ocean sounds-->
+	<div id="audioDiv">
+		<p>Click play and close your eyes!</p>
+		<audio controls loop>
+			<source src="sea-waves.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		  </audio>
+	</div>		
+
+<footer><p>Author: Msg. This is the capstone project for <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a> Coursera Specialization.</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- what is meta? Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+
+	<!--UTF-8 - Character encoding for Unicode-->
+	<meta charset="utf-8"> 
+	<!-- description of your web page-->
+	<meta name="description" content="Capstone webpage"> 
+	<!--Define keywords for search engines-->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+	<!--author-->
+	<meta name="author" content="MsG"> 
+	<!--Refresh document every 30 seconds-->
+	<meta http-equiv="refresh" content="30"> 
+	<!--Setting the viewport to make your website look good on all devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- tag for the title !mandatory!CANNOT BE OMITTED-->
+	<title> Capstone Project </title> 
+
+	<!-- add favicon -->
+	<link rel="shortcut icon" type="image/png"	href="favicon-capstone.png"> 
+
+	<!-- 	Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet' type='text/css'> 
+	<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<!-- add style -->
+	<link rel="stylesheet" type="text/css" href="capstone.css">
+
+	<!-- my js file -->
+	<script src="capstone.js"></script> 
+</head>
+
+<body>
+<header>
+	<!-- 	Navigation Bar on the top right corner. The id of the bar is "topLinks" and we can use this name to alter the style in css -->
+
+      <!-- 		<div class="logo">LOGO</div> -->
+      
+	  <nav id="navContainer">
+        <ul class="navbar" id="nava">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+			<li><a href="fleet.html">Our fleet</a></li>
+            <li><a class="current" href="contact.html">Contact  us</a></li>
+        </ul>
+ 
+        <div class="burger" onclick="burger()" id = "burg" >
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</header>
+
+
+	<h1>Get in touch</h1>
+
+	<div class="contact">
+		<div class="container">
+			<h2>Contact form</h2>
+				<form>
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="email">Email Address:</label>
+					<input type="email" id="email" name="email" placeholder="Your email address..">
+
+					<label for="message">Please write your message here:</label>
+					<input type="text" id="message" name="message"  placeholder="Write something..">
+
+					<input type="submit" value="Submit">
+				</form>
+		</div>
+
+
+		<div class="osmap">
+			<h2>Our address</h2>
+				<address>2 Nireos str.,	84100, Syros, Greece</address>
+			<iframe  src="https://www.openstreetmap.org/export/embed.html?bbox=24.926444292068485%2C37.435902052708066%2C24.944361448287964%2C37.44341548582449&amp;layer=mapnik&amp;marker=37.439658863563174%2C24.935402870178223" style="border: 1px solid rgb(107, 107, 107)"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=37.43966&amp;mlon=24.93540#map=17/37.43966/24.93540&amp;layers=N">View Larger Map</a></small>
+		</div>
+
+	</div>
+
+<footer>
+    <p>Author: Msg. This is the capstone project for <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a> Coursera Specialization.</p>
+</footer>
+</body>	
+</html>

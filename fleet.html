@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- what is meta? Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+
+	<!--UTF-8 - Character encoding for Unicode-->
+	<meta charset="utf-8"> 
+	<!-- description of your web page-->
+	<meta name="description" content="Capstone Project"> 
+	<!--Define keywords for search engines-->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+	<!--author-->
+	<meta name="author" content="MsG"> 
+	<!--Refresh document every 60 seconds-->
+	<meta http-equiv="refresh" content="60"> 
+	<!--Setting the viewport to make your website look good on all devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- tag for the title !mandatory!CANNOT BE OMITTED-->
+	<title> Capstone Project </title> 
+
+	<!-- add favicon -->
+	<link rel="shortcut icon" type="image/png"	href="favicon-capstone.png"> 
+
+	<!-- 	Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet' type='text/css'> 
+	<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<!-- add style -->
+	<link rel="stylesheet" type="text/css" href="capstone.css">
+
+	<!-- my js file -->
+	<script src="capstone.js"></script> 
+
+</head>
+<body>
+<header>
+	<!-- 	Navigation Bar on the top right corner. The id of the bar is "topLinks" and we can use this name to alter the style in css -->
+
+      <!-- 		<div class="logo">LOGO</div> -->
+      
+	  <nav id="navContainer">
+        <ul class="navbar" id="nava">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+			<li><a class="current" href="fleet.html">Our fleet</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <!--TOOGLE CLASS for burger https://www.w3schools.com/howto/howto_js_toggle_class.asp -->
+		<div class="burger" onclick="burger()" id = "burg" >
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+	</nav>
+
+</header>
+
+	<h1>Our fleet</h1>
+	<table>
+		<tr>
+		  <th>Photo</th>
+		  <th>Name</th>
+		  <th>Length</th>
+		  <th>Year</th>
+		  <th>Guests</th>
+		  <th>Crew</th>
+		</tr>
+		<tr>
+			<td><img src="https://images.unsplash.com/photo-1590090934629-407cd80bddd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Our sailing yacht called Anahita"> </td>
+			<td class="boatName">Anahita</td>
+			<td>42ft</td>
+			<td>2005</td>
+			<td>9</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td><img src="https://images.unsplash.com/photo-1581271164789-7c97932822d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Our sailing yacht called Barbeau"></td>
+			<td class="boatName">Barbeau</td>
+			<td>65ft</td>
+			<td>2012</td>
+			<td>15</td>
+			<td>3</td>
+		  </tr>
+		  <tr>
+			<td><img src="https://images.unsplash.com/photo-1591063072811-4ac665abc6dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Our sailing yacht called Beryl"></td>
+			<td class="boatName">Beryl</td>
+			<td>51ft</td>
+			<td>2016</td>
+			<td>12</td>
+			<td>2</td>
+		  </tr>
+		  <tr>
+			<td><img src="https://images.unsplash.com/photo-1545992311-cee340fc6011?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60
+				" alt="Our sailing yacht called Delmar"></td>
+			<td class="boatName">Delmar</td>
+			<td>50ft</td>
+			<td>2004</td>
+			<td>12</td>
+			<td>2</td>
+		  </tr>
+		  <tr>
+			<td><img src="https://images.unsplash.com/photo-1575961220373-15004d211e07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60
+				" alt="Our sailing yacht called Devere"></td>
+			<td class="boatName">Devere</td>
+			<td>48ft</td>
+			<td>2012</td>
+			<td>10</td>
+			<td>2</td>
+		  </tr>
+		  <tr>
+			<td><img src="https://images.unsplash.com/photo-1588138643682-224367f1a07f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Our sailing yacht called Nori"></td>
+			<td class="boatName">Nori</td>
+			<td>50ft</td>
+			<td>1999</td>
+			<td>12</td>
+			<td>2</td>
+		  </tr>
+		<tr>
+			<td><img src="https://images.unsplash.com/photo-1592955294526-5e1c7c7fe95a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60" alt="Our sailing yacht called Ondine"></td>
+			<td class="boatName">Ondine</td>
+			<td>42.7ft</td>
+			<td>2001</td>
+			<td>9</td>
+			<td>2</td>
+		</tr>
+	  </table>
+	  <footer>
+		<p>Author: Msg. This is the capstone project for <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a> Coursera Specialization.</p>
+	</footer>
+</body>
+</html>
